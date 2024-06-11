@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Post Form</title>
+    <link rel="stylesheet" href="form.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="title"><h1>Add Featured Post</h1></div>
+    <section class="featured-form">
+      <form id="featuredForm">
+        <label for="featuredTitle">Title:</label>
+        <input type="text" id="featuredTitle" name="featuredTitle" required />
+
+        <label for="featuredContent">Post Content:</label>
+        <textarea
+          id="featuredContent"
+          name="featuredContent"
+          rows="4"
+          required
+        ></textarea>
+
+        <label for="featuredDate">Date:</label>
+        <input type="date" id="featuredDate" name="featuredDate" required />
+
+        <label>Add Card 1</label>
+        <label for="worldTitle">Title:</label>
+        <input type="text" id="worldTitle" name="worldTitle" required />
+
+        <label for="worldContent">Post Content:</label>
+        <textarea
+          id="worldContent"
+          name="worldContent"
+          rows="4"
+          required
+        ></textarea>
+
+        <label for="worldDate">Date:</label>
+        <input type="date" id="worldDate" name="worldDate" required />
+
+        <label for="worldThumbnail">Thumbnail:</label>
+        <input type="file" id="worldThumbnail" name="worldThumbnail" required />
+
+        <label>Add Card 2</label>
+        <label for="designTitle">Title:</label>
+        <input type="text" id="designTitle" name="designTitle" required />
+
+        <label for="designContent">Post Content:</label>
+        <textarea
+          id="designContent"
+          name="designContent"
+          rows="4"
+          required
+        ></textarea>
+
+        <label for="designDate">Date:</label>
+        <input type="date" id="designDate" name="designDate" required />
+
+        <label for="designThumbnail">Thumbnail:</label>
+        <input
+          type="file"
+          id="designThumbnail"
+          name="designThumbnail"
+          required
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>
