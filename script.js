@@ -69,7 +69,7 @@ document
         localStorage.setItem("blogPostData", JSON.stringify(formData));
 
         // Redirect to index.html
-        window.location.href = "index.html";
+        window.location.href = "blog.html";
       };
       reader2.readAsDataURL(designThumbnail);
     };

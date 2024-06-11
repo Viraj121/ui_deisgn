@@ -1,220 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Template</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="index.js" defer></script>
-</head>
-<body>
-    <header>
-        <div class="top-bar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Post Form</title>
+    <link rel="stylesheet" href="form.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="title"><h1>Add Featured Post</h1></div>
+    <section class="featured-form">
+      <form id="featuredForm">
+        <label for="featuredTitle">Title:</label>
+        <input type="text" id="featuredTitle" name="featuredTitle" required />
 
+        <label for="featuredContent">Post Content:</label>
+        <textarea
+          id="featuredContent"
+          name="featuredContent"
+          rows="4"
+          required
+        ></textarea>
 
-            <div class="subscribe">
-                <a href="#">Subscribe</a>
-            </div>
+        <label for="featuredDate">Date:</label>
+        <input type="date" id="featuredDate" name="featuredDate" required />
 
-            <div class="site-title">Large</div>
+        <label>Add Card 1</label>
+        <label for="worldTitle">Title:</label>
+        <input type="text" id="worldTitle" name="worldTitle" required />
 
+        <label for="worldContent">Post Content:</label>
+        <textarea
+          id="worldContent"
+          name="worldContent"
+          rows="4"
+          required
+        ></textarea>
 
-            <div class="search-signup">
-              
-                <i class="fas fa-search"></i>
-            
-                
-                <button>Sign up</button>
+        <label for="worldDate">Date:</label>
+        <input type="date" id="worldDate" name="worldDate" required />
 
-                <div class="menu-icon">
-                  <i class="fa-solid fa-bars"></i>
-                </div>
+        <label for="worldThumbnail">Thumbnail:</label>
+        <input type="file" id="worldThumbnail" name="worldThumbnail" required />
 
-            </div>
-            
-            
-        </div>
-        <div class="line"><h2></h2></div>
+        <label>Add Card 2</label>
+        <label for="designTitle">Title:</label>
+        <input type="text" id="designTitle" name="designTitle" required />
 
-        <nav>
-            <ul>
-                <li><a href="#">World</a></li>
-                <li><a href="#">U.S.</a></li>
-                <li><a href="#">Technology</a></li>
-                <li><a href="#">Design</a></li>
-                <li><a href="#">Culture</a></li>
-                <li><a href="#">Business</a></li>
-                <li><a href="#">Politics</a></li>
-                <li><a href="#">Opinion</a></li>
-                <li><a href="#">Science</a></li>
-                <li><a href="#">Health</a></li>
-                <li><a href="#">Style</a></li>
-                <li><a href="#">Travel</a></li>
-            </ul>
-        </nav>
-        
-    </header>
-    <main>
-            <section class="featured-post">
-                <h1 id="featuredTitle">Title of a longer featured blog post</h1>
-                <p id="featuredContent">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what's most interesting in this post's contents.</p>
-                <p id="featuredDate">Date</p>
-              </section>
-          
-              <section class="posts">
+        <label for="designContent">Post Content:</label>
+        <textarea
+          id="designContent"
+          name="designContent"
+          rows="4"
+          required
+        ></textarea>
 
+        <label for="designDate">Date:</label>
+        <input type="date" id="designDate" name="designDate" required />
 
-                <article class="post-card">
-                  <div class="card">
-                    <div class="content">
-                      <a href="#">World</a>
-                      <h2 id="worldTitle">Featured post</h2>
-                      <p id="worldDate">Date</p>
-                      <p  class="worldC" id="worldContent">Post content</p>
-                    </div>
-                    <div class="thumbnail">
-                      <img id="worldThumbnail" src="" alt="World Thumbnail">
-                    </div>
-                  </div>
-                </article>
-            
-                <article class="post-card">
-                  <div class="card">
-                    <div class="content">
-                      <a href="#">Design</a>
-                      <h2 id="designTitle">Post title</h2>
-                      <p id="designDate">Date</p>
-                      <p class="worldC" id="designContent">Post content</p>
-                    </div>
-                    <div class="thumbnail">
-                      <img id="designThumbnail" src="" alt="Design Thumbnail">
-                    </div>
-                  </div>
-                </article>
-              </section>
-
-            <div class="main-part2">
-                <section class="from-firehose">
-                  <div class="line">
-                    <h2><i> From the Firehose</i></h2>
-                  </div> 
-                  
-                  
-                    <article class="blog-post">
-                        <h3>Sample blog post</h3>
-                        <h5>January 1, 2014 by <span class="author">Mark</span></h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, perspiciatis nesciunt? Optio natus iure, beatae veniam numquam possimus. Voluptates earum et illo at repellat praesentium facilis eveniet placeat atque? Necessitatibus est id ipsam sequi, consectetur autem dignissimos. Veritatis, amet consectetur?.</p>
-
-                        <div class="line">
-                          <h2></h2>
-                        </div>
-                        
-                        <p>Lorem ipsum dolor sit, amet consectetur <span class="author">adipisicing elit. Exercitationem cum</span> corrupti voluptatem! Aperiam libero tempora reprehenderit iure error praesentium dolorem optio. Quis doloremque tempora ea eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, totam.</p>
-
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <b> Lorem, ipsum dolor. adipisicing elit. Sit, ullam maiores ipsa rem nam </b> Sint, quis! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, et.
-                        </p>
-
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit consectetur ipsa eum, repellat voluptatum sequi repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, natus?</p>
-
-                        <h3>Heading</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores, illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita deleniti maiores tenetur? Quidem neque repellat quis ex! Harum, impedit nemo.</p>
-                        <h3>Sub-heading</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ad molestias. Lorem, ipsum.</p>
-                        <pre><code>Example code block</code></pre>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, corrupti amet. Lorem ipsum dolor sit.</p>
-                        <h3>Sub-heading</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam assumenda nobis illo, veniam quo temporibus.</p>
-                        <ul>
-                          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, porro reiciendis? lorem2</li>
-                          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, inventore?</li>
-                          <li>Lorem ipsum, dolor sit amet consectetur adipisicing. Lorem, ipsum dolor.</li>
-                        </ul>
-                        <ol>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, porro reiciendis? lorem2</li>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, inventore?</li>
-                            <li>Lorem ipsum, dolor sit amet consectetur adipisicing. Lorem, ipsum dolor.</li>
-                        </ol>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, maxime! Lorem ipsum dolor sit.</p>
-                    </article>
-
-
-                    <article class="blog-post">
-                        <h3>Another blog post</h3>
-
-                        <h5>December 23, 2013 by <span class="author">Jacob</span></h5>
-
-                        <p>Lorem ipsum dolor sit amet consectetur <span class="author">adipisicing elit. Exercitationem cum</span> ullam beatae? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, facere!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, illo!</p>
-                        <p>Lorem, ipsum dolor sit amet consectetur <b>adipisicing elit. Corrupti, hic impedit!  Lorem ipsum dolor sit.</b>Lorem ipsum dolor sit. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit, et. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, mollitia ut?</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, perspiciatis. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, delectus.</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, impedit? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, ducimus!</p>
-
-                    </article>
-                    <article class="blog-post">
-                        <h3>New feature</h3>
-                        <h5>December 23, 2013 by <span class="author">Jacob</span></h5>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, deleniti! Lorem ipsum dolor sit.</p>
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur.</li>
-                            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, exercitationem!</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, ullam?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime magni reprehenderit molestiae, architecto commodi nisi.</p>
-                    </article>
-                </section>
-                <aside>
-                    <section class="about">
-                      <div class="About">
-                        <strong><i><h2>About</h2></i></strong>
-                      </div>
-                        <p>Lorem ipsum dolor, sit amet <em>sem malesuada magna</em> consectetur adipisicing elit. Quasi repellendus perspiciatis nesciunt doloremque fugiat impedit ipsum consequatur libero veritatis!</p>
-
-                        
-                    </section>
-                    <section class="archives">
-                        <strong><i><h2>Archives</h2></i></strong>
-                        <ul>
-                            <li><a href="#">January 2014</a></li>
-                            <li><a href="#">February 2014</a></li>
-                            <li><a href="#">March 2014</a></li>
-                            <li><a href="#">april 2013</a></li>
-                            <li><a href="#">May 2013</a></li>
-                            <li><a href="#">June 2013</a></li>
-                            <li><a href="#">July 2013</a></li>
-                            <li><a href="#">August 2013</a></li>
-                            <li><a href="#">September 2013</a></li>
-                            <li><a href="#">Octomber 2013</a></li>
-                            <li><a href="#">Dec 2013</a></li>
-                            <li><a href="#">January 2013</a></li>
-                        </ul>
-                    </section>
-                    <section class="elsewhere">
-                      <strong><i><h2>Elsewhere</h2></i></strong> 
-                        <ul>
-                            <li><a href="#">GitHub</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Facebook</a></li>
-                        </ul>
-                        
-                    </section>
-                </aside>
-
-                <div class="grid-container">
-                  <button class="button older">Older</button>
-                  <button class="button newer">Newer</button>
-      
-                </div>
-      
-                
-            </div>
-  
-            
-        
-            
-    <footer>
-        <p>Blog template built for <a href="https://google.com">Viraj Gavas</a> by @gavas.</p>
-        <p><a href="#">Back to top</a></p>
-    </footer>
-</body>
+        <label for="designThumbnail">Thumbnail:</label>
+        <input
+          type="file"
+          id="designThumbnail"
+          name="designThumbnail"
+          required
+        />
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </body>
 </html>
