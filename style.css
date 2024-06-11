@@ -308,8 +308,21 @@ footer a {
 
 @media (max-width: 872px) {
     .featured-post h1 {
-        font-size: 1.8rem;
+        font-weight: 900;
+        font-size: 2em;
     }
+
+    #featuredContent {
+        font-size: 700;
+        padding: 10px;
+        overflow: hidden;
+    }
+
+    #featuredDate {
+        padding: 0 10px;
+    }
+
+
 
     .top-bar {
         flex-direction: column;
@@ -395,6 +408,12 @@ footer a {
 @media (max-width: 400px) {
     .site-title {
         font-size: 1.5em;
+    }
+
+    #featuredContent {
+        padding: 10px;
+        overflow: hidden;
+        font-size: 20px;
     }
 
     .featured-post h1 {
